@@ -9,11 +9,11 @@ angular.module('canoeApp.services').factory('configService', function ($http, st
   var defaultConfig = {
     download: {
       canoe: {
-        url: 'https://getcanoe.io'
+        url: 'https://nos.cash'
       }
     },
 
-    backend: 'cbnos.cryptware.de',
+    backend: 'canoed.lookinto.space',
 
     // TODO We need URL for rating iOS app, and Android
     rateApp: {

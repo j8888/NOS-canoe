@@ -90,7 +90,7 @@ module.exports = function (isState = false) {
    * Sets the send parameters and builds the block
    *
    * @param {string} previousBlockHash - The previous block 32 byte hash hex encoded
-   * @param {string} destinationAccount - The NANO account receiving the money
+   * @param {string} destinationAccount - The NEURO account receiving the money
    * @param {string} balanceRemaining - Remaining balance after sending this block (Raw)
    * @throws An exception on invalid block hash
    * @throws An exception on invalid destination account
@@ -163,7 +163,7 @@ module.exports = function (isState = false) {
     try {
       account = keyFromAccount(newAccount)
     } catch (err) {
-      throw new Error('Invalid NANO account')
+      throw new Error('Invalid NEURO account')
     }
 
     if (representativeAccount) {
@@ -244,7 +244,7 @@ module.exports = function (isState = false) {
   /**
    * Sets the account owner of the block
    *
-   * @param {string} acc - The NANO account
+   * @param {string} acc - The NEURO account
    */
   api.setAccount = function (acc) {
     blockAccount = acc
@@ -261,7 +261,7 @@ module.exports = function (isState = false) {
 
   /**
    * Sets the account which sent the block
-   * @param {string} acc - The NANO account
+   * @param {string} acc - The NEURO account
    */
   api.setOrigin = function (acc) {
     if (type === 'receive' || type === 'open') { origin = acc }

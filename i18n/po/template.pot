@@ -15,25 +15,25 @@ msgid "4-digit PIN"
 msgstr ""
 
 #: www/views/feedback/rateApp.html:7
-msgid "5-star ratings help us get Canoe into more hands, and more users means more resources can be committed to the app!"
+msgid "5-star ratings help us get NOS into more hands, and more users means more resources can be committed to the app!"
 msgstr ""
 
 #: www/views/changeLocks.html:53
 msgid ""
 "<h5 class=\"toggle-label\" translate=\"\">Background Behaviour</h5>\n"
-"            <p translate=\"\">Choose the lock type to use when Canoe goes to the background. To disable background locking select None.</p>"
+"            <p translate=\"\">Choose the lock type to use when NOS goes to the background. To disable background locking select None.</p>"
 msgstr ""
 
 #: www/views/changeLocks.html:37
 msgid ""
 "<h5 class=\"toggle-label\" translate=\"\">Hard Lock</h5>\n"
-"          With Hard Lock, Canoe encrypts your wallet and completely remove it from memory. You can not disable Hard Lock, but you can set a very high timeout."
+"          With Hard Lock, NOS encrypts your wallet and completely remove it from memory. You can not disable Hard Lock, but you can set a very high timeout."
 msgstr ""
 
 #: www/views/changeLocks.html:13
 msgid ""
 "<h5 class=\"toggle-label\" translate=\"\">Soft Lock</h5>\n"
-"          <p translate=\"\">With Soft Lock, Canoe is locked but your wallet is still live unencrypted in memory. Enabling Soft Locks, makes it possible to use simpler forms of credentials like PINs and fingerprints.</p>"
+"          <p translate=\"\">With Soft Lock, NOS is locked but your wallet is still live unencrypted in memory. Enabling Soft Locks, makes it possible to use simpler forms of credentials like PINs and fingerprints.</p>"
 msgstr ""
 
 #: src/js/controllers/feedback/send.js:25
@@ -47,7 +47,7 @@ msgstr ""
 
 #: src/js/controllers/preferencesAbout.js:5
 #: www/views/tab-settings.html:151
-msgid "About"
+msgid "About NOS"
 msgstr ""
 
 #: src/js/services/nanoService.js:712
@@ -166,7 +166,7 @@ msgid "An account already exists with that name"
 msgstr ""
 
 #: www/views/backupWarning.html:14
-msgid "Anyone with your seed can access or spend your Nano."
+msgid "Anyone with your seed can access or spend your NEURO."
 msgstr ""
 
 #: www/views/backupWarning.html:10
@@ -268,11 +268,11 @@ msgid "Cannot Create Wallet"
 msgstr ""
 
 #: www/views/modals/password.html:6
-msgid "Canoe is Locked"
+msgid "NOS is Locked"
 msgstr ""
 
 #: www/views/onboarding/tour.html:46
-msgid "Canoe stores your Nano using cutting-edge security."
+msgid "NOS stores your NEURO using cutting-edge security."
 msgstr ""
 
 #: www/views/import.html:10
@@ -313,7 +313,7 @@ msgid "Choose a backup file from your computer"
 msgstr ""
 
 #: www/views/changeLocks.html:55
-msgid "Choose the lock type to use when Canoe goes to the background. To disable background locking select None."
+msgid "Choose the lock type to use when NOS goes to the background. To disable background locking select None."
 msgstr ""
 
 #: src/js/controllers/confirm.js:221
@@ -470,7 +470,7 @@ msgid "Don't see your language? Sign up on POEditor! We'd love to support your l
 msgstr ""
 
 #: www/views/tab-settings.html:142
-msgid "Donate to Canoe"
+msgid "Donate to NOS"
 msgstr ""
 
 #: www/views/tab-export-file.html:28
@@ -764,15 +764,15 @@ msgid "How could we improve your experience?"
 msgstr ""
 
 #: www/views/feedback/rateCard.html:3
-msgid "How do you like Canoe?"
+msgid "How do you like NOS?"
 msgstr ""
 
 #: www/views/tab-settings.html:134
-msgid "How to buy Nano"
+msgid "How to buy NEURO"
 msgstr ""
 
 #: src/js/controllers/tab-settings.js:60
-msgid "How to buy and sell Nano is described at the website."
+msgid "How to buy and sell NEURO is described at the website."
 msgstr ""
 
 #: src/js/controllers/feedback/rateCard.js:29
@@ -813,7 +813,7 @@ msgid "I've written it down"
 msgstr ""
 
 #: www/views/advancedSettings.html:14
-msgid "If enabled, Proof Of Work is delegated to the Canoe server side. This option is disabled and always true on mobile Canoe for now."
+msgid "If enabled, Proof Of Work is delegated to the NOS server side. This option is disabled and always true on mobile NOS for now."
 msgstr ""
 
 #: www/views/advancedSettings.html:32
@@ -931,7 +931,7 @@ msgid "Joe Doe"
 msgstr ""
 
 #: www/views/onboarding/welcome.html:5
-msgid "Join the future of money,<br>get started with Nano."
+msgid "Join the future of money,<br>get started with NEURO."
 msgstr ""
 
 #: www/views/onboarding/tour.html:22
@@ -964,7 +964,7 @@ msgid "Loading transaction info..."
 msgstr ""
 
 #: www/views/tab-settings.html:45
-msgid "Lock Canoe"
+msgid "Lock NOS"
 msgstr ""
 
 #: www/views/changeLocks.html:58
@@ -1022,23 +1022,23 @@ msgid "Name"
 msgstr ""
 
 #: www/views/includes/incomingDataMenu.html:29
-msgid "Nano Account"
+msgid "NEURO Account"
 msgstr ""
 
 #: www/views/onboarding/tour.html:31
-msgid "Nano is Feeless"
+msgid "NEURO is Feeless"
 msgstr ""
 
 #: www/views/onboarding/tour.html:18
-msgid "Nano is Instant"
+msgid "NEURO is Instant"
 msgstr ""
 
 #: www/views/onboarding/tour.html:45
-msgid "Nano is Secure"
+msgid "NEURO is Secure"
 msgstr ""
 
 #: www/views/onboarding/disclaimer.html:15
-msgid "Nano is different &ndash; it cannot be safely held with a bank or web service."
+msgid "NEURO is different &ndash; it cannot be safely held with a bank or web service."
 msgstr ""
 
 #: www/views/onboarding/tour.html:36
@@ -1062,7 +1062,7 @@ msgid "No accounts available"
 msgstr ""
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no Nano."
+msgid "No backup, no NEURO."
 msgstr ""
 
 #: www/views/addressbook.html:19
@@ -1298,7 +1298,7 @@ msgid "Please enter your PIN"
 msgstr ""
 
 #: www/views/tab-settings.html:143
-msgid "Please load Nano to donate"
+msgid "Please load NEURO to donate"
 msgstr ""
 
 #: src/js/controllers/import.js:95
@@ -1334,7 +1334,7 @@ msgid "Push Notifications"
 msgstr ""
 
 #: www/views/preferencesNotifications.html:17
-msgid "Push notifications for Canoe are currently disabled. Enable them in the Settings app."
+msgid "Push notifications for NOS are currently disabled. Enable them in the Settings app."
 msgstr ""
 
 #: www/views/export.html:15
@@ -1507,11 +1507,11 @@ msgid "Send Feedback"
 msgstr ""
 
 #: www/views/addressbook.view.html:35
-msgid "Send Nano"
+msgid "Send NEURO"
 msgstr ""
 
 #: www/views/includes/incomingDataMenu.html:46
-msgid "Send Nano to this address"
+msgid "Send NEURO to this address"
 msgstr ""
 
 #: www/views/includes/logOptions.html:17
@@ -1575,7 +1575,7 @@ msgstr ""
 
 #: src/js/controllers/feedback/complete.js:5
 #: www/views/tab-settings.html:53
-msgid "Share Canoe"
+msgid "Share NOS"
 msgstr ""
 
 #: www/views/feedback/complete.html:17
@@ -1620,7 +1620,7 @@ msgid "Soft Timeout"
 msgstr ""
 
 #: www/views/tab-send.html:33
-msgid "Start sending Nano"
+msgid "Start sending NEURO"
 msgstr ""
 
 #: src/js/services/nanoService.js:87
@@ -1688,7 +1688,7 @@ msgid "That's exciting to hear. We'd love to earn that fifth star from you – h
 msgstr ""
 
 #: src/js/controllers/onboarding/terms.js:21
-msgid "The official English Terms of Service are available on the Canoe website."
+msgid "The official English Terms of Service are available on the NOS website."
 msgstr ""
 
 #: www/views/tab-import-phrase.html:4
@@ -1704,7 +1704,7 @@ msgid "The wallet server URL"
 msgstr ""
 
 #: src/js/controllers/tab-home.js:52
-msgid "There is a new version of Canoe available"
+msgid "There is a new version of NOS available"
 msgstr ""
 
 #: src/js/controllers/import.js:108
@@ -1738,11 +1738,11 @@ msgid "To"
 msgstr ""
 
 #: www/views/tab-send.html:37
-msgid "To get started, you need Nano. Share your account to receive Nano."
+msgid "To get started, you need NEURO. Share your account to receive NEURO."
 msgstr ""
 
 #: www/views/tab-send.html:38
-msgid "To get started, you need an Account in your wallet to receive Nano."
+msgid "To get started, you need an Account in your wallet to receive NEURO."
 msgstr ""
 
 #: src/js/services/fingerprintService.js:58
@@ -1751,7 +1751,7 @@ msgid "Touch ID Failed"
 msgstr ""
 
 #: www/views/onboarding/tour.html:32
-msgid "Trade Nano for other currencies like USD or Euros."
+msgid "Trade NEURO for other currencies like USD or Euros."
 msgstr ""
 
 #: src/js/controllers/tx-details.js:10
@@ -1759,7 +1759,7 @@ msgid "Transaction"
 msgstr ""
 
 #: www/views/onboarding/tour.html:19
-msgid "Transfer Nano instantly to anyone, anywhere."
+msgid "Transfer NEURO instantly to anyone, anywhere."
 msgstr ""
 
 #: src/js/controllers/paperWallet.js:63
@@ -1871,11 +1871,11 @@ msgid "We'd love to do better."
 msgstr ""
 
 #: src/js/controllers/feedback/send.js:76
-msgid "We're always looking for ways to improve Canoe."
+msgid "We're always looking for ways to improve NOS."
 msgstr ""
 
 #: src/js/controllers/feedback/send.js:82
-msgid "We're always looking for ways to improve Canoe. How could we improve your experience?"
+msgid "We're always looking for ways to improve NOS. How could we improve your experience?"
 msgstr ""
 
 #: www/views/includes/incomingDataMenu.html:6
@@ -1895,11 +1895,11 @@ msgid "What do you call this account?"
 msgstr ""
 
 #: www/views/changeLocks.html:15
-msgid "With Soft Lock, Canoe is locked but your wallet is still live unencrypted in memory. Enabling Soft Locks, makes it possible to use simpler forms of credentials like PINs and fingerprints."
+msgid "With Soft Lock, NOS is locked but your wallet is still live unencrypted in memory. Enabling Soft Locks, makes it possible to use simpler forms of credentials like PINs and fingerprints."
 msgstr ""
 
 #: www/views/feedback/rateApp.html:10
-msgid "Would you be willing to rate Canoe in the app store?"
+msgid "Would you be willing to rate NOS in the app store?"
 msgstr ""
 
 #: www/views/onboarding/notifications.html:4
@@ -1931,7 +1931,7 @@ msgid "You can make contributions by signing up on our POEditor community transl
 msgstr ""
 
 #: www/views/tab-scan.html:16
-msgid "You can scan Nano addresses, payment requests and more."
+msgid "You can scan NEURO addresses, payment requests and more."
 msgstr ""
 
 #: src/js/controllers/preferencesAbout.js:13
@@ -1947,11 +1947,11 @@ msgid "You'll receive email notifications about payments sent and received from 
 msgstr ""
 
 #: www/views/tab-home.html:50
-msgid "Your Nano Wallet is ready!"
+msgid "Your NEURO Wallet is ready!"
 msgstr ""
 
 #: www/views/includes/confirmBackupPopup.html:6
-msgid "Your Nano wallet seed is backed up!"
+msgid "Your NEURO wallet seed is backed up!"
 msgstr ""
 
 #: www/views/changePassword.html:16
@@ -1996,7 +1996,7 @@ msgid "delete"
 msgstr ""
 
 #: www/views/changeBackend.html:15
-msgid "getcanoe.io"
+msgid "canoed.lookinto.space"
 msgstr ""
 
 #: www/views/addressbook.add.html:33

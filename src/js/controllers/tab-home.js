@@ -20,7 +20,7 @@ angular.module('canoeApp.controllers').controller('tabHomeController',
 
     $scope.openExternalLinkHelp = function () {
     // TODO var url = 'https://getcanoe.io/' + uxLanguage.getCurrentLanguage() + '/help'
-      var url = 'https://getcanoe.io/help.html'
+      var url = 'https://nos.cash'
       var optIn = true
       var title = null
       var message = gettextCatalog.getString('Help and support information is available at the website.')
@@ -49,7 +49,7 @@ angular.module('canoeApp.controllers').controller('tabHomeController',
           }
           if (newRelease) {
             $scope.newRelease = true
-            $scope.updateText = gettextCatalog.getString('There is a new version of Canoe available', {
+            $scope.updateText = gettextCatalog.getString('There is a new version of NOS available', {
               appName: $scope.name
             })
           }
