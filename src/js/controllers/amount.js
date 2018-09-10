@@ -8,7 +8,7 @@ angular.module('canoeApp.controllers').controller('amountController', function (
   var SMALL_FONT_SIZE_LIMIT = 10
   var LENGTH_EXPRESSION_LIMIT = 19
   var isNW = platformInfo.isNW
-  var rawPerNano = BigNumber('100') // 1 Neuro = 100 raw
+  var rawPerNano = BigNumber('100') // 1 Nollar = 100 raw
   var unitIndex = 0
   var altUnitIndex = 0
   var availableUnits = []
@@ -78,9 +78,9 @@ angular.module('canoeApp.controllers').controller('amountController', function (
       availableUnits = []
 
       availableUnits.push({
-        name: 'Neuro',
-        id: 'neuro',
-        shortName: 'NEURO'
+        name: 'Nollar',
+        id: 'nollar',
+        shortName: 'NOLLAR'
       })
 
       unitIndex = 0
@@ -126,9 +126,9 @@ angular.module('canoeApp.controllers').controller('amountController', function (
       })
 
       storageService.getAmountInputDefaultCurrency(function (err, amountInputDefaultCurrency) {
-        config.amountInputDefaultCurrency = amountInputDefaultCurrency ? amountInputDefaultCurrency : 'NEURO'
+        config.amountInputDefaultCurrency = amountInputDefaultCurrency ? amountInputDefaultCurrency : 'NOLLAR'
       })
-      if (!config.amountInputDefaultCurrency || config.amountInputDefaultCurrency === 'NEURO') {
+      if (!config.amountInputDefaultCurrency || config.amountInputDefaultCurrency === 'NOLLAR') {
         unitIndex = 0
         altUnitIndex = 1
       } else {
@@ -254,7 +254,7 @@ angular.module('canoeApp.controllers').controller('amountController', function (
       config.amountInputDefaultCurrency = availableUnits[1].shortName
       altUnitIndex = 0
     } else {
-      config.amountInputDefaultCurrency = 'NEURO'
+      config.amountInputDefaultCurrency = 'NOLLAR'
       altUnitIndex = lodash.findIndex(availableUnits, {
         isFiat: true
       })

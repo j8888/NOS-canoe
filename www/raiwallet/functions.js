@@ -243,7 +243,7 @@ function keyFromAccount (account) {
         var key = uint4_hex(key_uint4)
         return key
       }			else				{ throw 'Checksum incorrect.' }
-    }		else			{ throw 'Invalid NEURO account.' }
+    }		else			{ throw 'Invalid NOLLAR account.' }
   }
-  throw 'Invalid NEURO account.'
+  throw 'Invalid NOLLAR account.'
 }
