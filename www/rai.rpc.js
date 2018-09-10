@@ -13,8 +13,8 @@
 *	JSON.stringify({"action":"block_count"})
 *	'{"action":"block_count"}'
 *
-* set 'url_base' as string. Mask protocol://host:port. Default value is http://localhost:7076. Samples
-*	http://localhost:7076
+* set 'url_base' as string. Mask protocol://host:port. Default value is http://localhost:7131. Samples
+*	http://localhost:7131
 *	https://canoeallet.info:7077
 *
 * set 'async' as boolean. Default value is false
@@ -22,7 +22,7 @@
 *
 * Request sample
 *	var rai = new Rai();
-*	var block_count = rai.rpc(JSON.stringify({"action":"block_count"}), 'http://localhost:7076', false);
+*	var block_count = rai.rpc(JSON.stringify({"action":"block_count"}), 'http://localhost:7131', false);
 *
 */
 
@@ -691,7 +691,7 @@ function Rai (url_base) {
   }
 
   // Empty output
-  this.work_peer_add = function (address = '::1', port = '7076') {
+  this.work_peer_add = function (address = '::1', port = '7131') {
     var work_peer_add = this.rpc(JSON.stringify({'action': 'work_peer_add', 'address': address, 'port': port}))
     return work_peer_add.success
   }
