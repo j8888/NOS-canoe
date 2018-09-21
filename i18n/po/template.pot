@@ -166,7 +166,7 @@ msgid "An account already exists with that name"
 msgstr ""
 
 #: www/views/backupWarning.html:14
-msgid "Anyone with your seed can access or spend your NEURO."
+msgid "Anyone with your seed can access or spend your NOS."
 msgstr ""
 
 #: www/views/backupWarning.html:10
@@ -272,7 +272,7 @@ msgid "NOS is Locked"
 msgstr ""
 
 #: www/views/onboarding/tour.html:46
-msgid "NOS stores your NEURO using cutting-edge security."
+msgid "NOS stores your NOS using cutting-edge security."
 msgstr ""
 
 #: www/views/import.html:10
@@ -768,11 +768,11 @@ msgid "How do you like NOS?"
 msgstr ""
 
 #: www/views/tab-settings.html:134
-msgid "How to buy NEURO"
+msgid "How to buy NOS"
 msgstr ""
 
 #: src/js/controllers/tab-settings.js:60
-msgid "How to buy and sell NEURO is described at the website."
+msgid "How to buy and sell NOS is described at the website."
 msgstr ""
 
 #: src/js/controllers/feedback/rateCard.js:29
@@ -931,7 +931,7 @@ msgid "Joe Doe"
 msgstr ""
 
 #: www/views/onboarding/welcome.html:5
-msgid "Join the future of money,<br>get started with NEURO."
+msgid "Join the future of money,<br>get started with NOS."
 msgstr ""
 
 #: www/views/onboarding/tour.html:22
@@ -1022,23 +1022,23 @@ msgid "Name"
 msgstr ""
 
 #: www/views/includes/incomingDataMenu.html:29
-msgid "NEURO Account"
+msgid "NOS Account"
 msgstr ""
 
 #: www/views/onboarding/tour.html:31
-msgid "NEURO is Feeless"
+msgid "NOS is Feeless"
 msgstr ""
 
 #: www/views/onboarding/tour.html:18
-msgid "NEURO is Instant"
+msgid "NOS is Instant"
 msgstr ""
 
 #: www/views/onboarding/tour.html:45
-msgid "NEURO is Secure"
+msgid "NOS is Secure"
 msgstr ""
 
 #: www/views/onboarding/disclaimer.html:15
-msgid "NEURO is different &ndash; it cannot be safely held with a bank or web service."
+msgid "NOS is different &ndash; it cannot be safely held with a bank or web service."
 msgstr ""
 
 #: www/views/onboarding/tour.html:36
@@ -1062,7 +1062,7 @@ msgid "No accounts available"
 msgstr ""
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no NEURO."
+msgid "No backup, no NOS."
 msgstr ""
 
 #: www/views/addressbook.html:19
@@ -1298,7 +1298,7 @@ msgid "Please enter your PIN"
 msgstr ""
 
 #: www/views/tab-settings.html:143
-msgid "Please load NEURO to donate"
+msgid "Please load NOS to donate"
 msgstr ""
 
 #: src/js/controllers/import.js:95
@@ -1507,11 +1507,11 @@ msgid "Send Feedback"
 msgstr ""
 
 #: www/views/addressbook.view.html:35
-msgid "Send NEURO"
+msgid "Send NOS"
 msgstr ""
 
 #: www/views/includes/incomingDataMenu.html:46
-msgid "Send NEURO to this address"
+msgid "Send NOS to this address"
 msgstr ""
 
 #: www/views/includes/logOptions.html:17
@@ -1620,7 +1620,7 @@ msgid "Soft Timeout"
 msgstr ""
 
 #: www/views/tab-send.html:33
-msgid "Start sending NEURO"
+msgid "Start sending NOS"
 msgstr ""
 
 #: src/js/services/nanoService.js:87
@@ -1738,11 +1738,11 @@ msgid "To"
 msgstr ""
 
 #: www/views/tab-send.html:37
-msgid "To get started, you need NEURO. Share your account to receive NEURO."
+msgid "To get started, you need NOS. Share your account to receive NOS."
 msgstr ""
 
 #: www/views/tab-send.html:38
-msgid "To get started, you need an Account in your wallet to receive NEURO."
+msgid "To get started, you need an Account in your wallet to receive NOS."
 msgstr ""
 
 #: src/js/services/fingerprintService.js:58
@@ -1751,7 +1751,7 @@ msgid "Touch ID Failed"
 msgstr ""
 
 #: www/views/onboarding/tour.html:32
-msgid "Trade NEURO for other currencies like USD or Euros."
+msgid "Trade NOS for other currencies like USD or Euros."
 msgstr ""
 
 #: src/js/controllers/tx-details.js:10
@@ -1759,7 +1759,7 @@ msgid "Transaction"
 msgstr ""
 
 #: www/views/onboarding/tour.html:19
-msgid "Transfer NEURO instantly to anyone, anywhere."
+msgid "Transfer NOS instantly to anyone, anywhere."
 msgstr ""
 
 #: src/js/controllers/paperWallet.js:63
@@ -1931,7 +1931,7 @@ msgid "You can make contributions by signing up on our POEditor community transl
 msgstr ""
 
 #: www/views/tab-scan.html:16
-msgid "You can scan NEURO addresses, payment requests and more."
+msgid "You can scan NOS addresses, payment requests and more."
 msgstr ""
 
 #: src/js/controllers/preferencesAbout.js:13
@@ -1947,11 +1947,11 @@ msgid "You'll receive email notifications about payments sent and received from 
 msgstr ""
 
 #: www/views/tab-home.html:50
-msgid "Your NEURO Wallet is ready!"
+msgid "Your NOS Wallet is ready!"
 msgstr ""
 
 #: www/views/includes/confirmBackupPopup.html:6
-msgid "Your NEURO wallet seed is backed up!"
+msgid "Your NOS wallet seed is backed up!"
 msgstr ""
 
 #: www/views/changePassword.html:16

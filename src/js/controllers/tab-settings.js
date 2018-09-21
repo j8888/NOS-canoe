@@ -57,7 +57,7 @@ angular.module('canoeApp.controllers').controller('tabSettingsController', funct
     var url = 'https://nos.cash'
     var optIn = true
     var title = null
-    var message = gettextCatalog.getString('How to buy and sell NEURO is described at the website.')
+    var message = gettextCatalog.getString('How to buy and sell NOS is described at the website.')
     var okText = gettextCatalog.getString('Open')
     var cancelText = gettextCatalog.getString('Go Back')
     externalLinkService.open(url, optIn, title, message, okText, cancelText)
