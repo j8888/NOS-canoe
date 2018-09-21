@@ -8,7 +8,7 @@ angular.module('canoeApp.controllers').controller('amountController', function (
   var SMALL_FONT_SIZE_LIMIT = 10
   var LENGTH_EXPRESSION_LIMIT = 19
   var isNW = platformInfo.isNW
-  var rawPerNano = BigNumber('100') // 1 NOS = 100 raw
+  var rawPerNano = BigNumber('10000000000') // 1 NOS = 10^10 raw
   var unitIndex = 0
   var altUnitIndex = 0
   var availableUnits = []
