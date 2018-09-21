@@ -1996,7 +1996,7 @@ msgid "delete"
 msgstr ""
 
 #: www/views/changeBackend.html:15
-msgid "canoed.lookinto.space"
+msgid "canoed-nos.lookinto.space"
 msgstr ""
 
 #: www/views/addressbook.add.html:33

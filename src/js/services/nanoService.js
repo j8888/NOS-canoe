@@ -26,8 +26,8 @@ angular.module('canoeApp.services')
     root.wallet = null
 
     // Default server
-    var host = 'https://canoed.lookinto.space/rpc'
-    var mqttHost = 'canoed.lookinto.space'
+    var host = 'https://canoed-nos.lookinto.space/rpc'
+    var mqttHost = 'canoed-nos.lookinto.space'
 
     var rai = null
 
