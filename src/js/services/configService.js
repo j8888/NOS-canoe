@@ -33,7 +33,7 @@ angular.module('canoeApp.services').factory('configService', function ($http, st
       playSounds: true,
       settings: {
         unitName: 'NOS',
-        unitToRaw: 100, // Math.pow(10, 30),
+        unitToRaw: Math.pow(10, 10),
         unitDecimals: 2,
         unitCode: 'NOS',
         alternativeName: 'US Dollar',
