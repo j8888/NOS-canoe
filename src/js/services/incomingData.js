@@ -77,7 +77,7 @@ angular.module('canoeApp.services').factory('incomingData', function ($log, $sta
         }
       }
       var protocol = code.protocol
-      if (protocol === 'usd') {
+      if (protocol === 'nos') {
         // if (code.alias !== null) {
         //   if (code.params.amount) {
         //     $log.debug('Go send ' + JSON.stringify(code))
@@ -94,10 +94,10 @@ angular.module('canoeApp.services').factory('incomingData', function ($log, $sta
         }
         // }
         return cb(null, code)
-      } else if (protocol === 'usdkey') {
+      } else if (protocol === 'noskey') {
         // A private key
         // xrbkey:<encoded private key>[?][label=<label>][&][message=<message>]
-      } else if (protocol === 'usdseed') {
+      } else if (protocol === 'nosseed') {
         // Example QR urls, see https://github.com/clemahieu/raiblocks/wiki/URI-and-QR-Code-Standard
         // Payment:
         // xrb:xrb_<encoded address>[?][amount=<raw amount>][&][label=<label>][&][message=<message>]
@@ -108,7 +108,7 @@ angular.module('canoeApp.services').factory('incomingData', function ($log, $sta
         // We could add:
         // Contact?
         // Payment with confirmation
-      } else if (protocol === 'usdblock') {
+      } else if (protocol === 'nosblock') {
         // Used to scan blocks as QR codes and send them off to process
         // Currently we process it blindly without any verifications
         var result = nanoService.processBlockJSON(JSON.stringify(code.block))
