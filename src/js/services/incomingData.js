@@ -77,7 +77,7 @@ angular.module('canoeApp.services').factory('incomingData', function ($log, $sta
         }
       }
       var protocol = code.protocol
-      if (protocol === 'xrb' || protocol === 'raiblocks' || protocol === 'nano') {
+      if (protocol === 'usd') {
         // if (code.alias !== null) {
         //   if (code.params.amount) {
         //     $log.debug('Go send ' + JSON.stringify(code))
@@ -86,20 +86,18 @@ angular.module('canoeApp.services').factory('incomingData', function ($log, $sta
         //     goToAmountPage(code.account, code.alias)
         //   }
         // } else {
-          if (code.params.amount) {
-            $log.debug('Go send ' + JSON.stringify(code))
-            goSend(code.account, code.params.amount, code.params.message)
-          } else {
-            goToAmountPage(code.account, null, fromAddress)
-          }
+        if (code.params.amount) {
+          $log.debug('Go send ' + JSON.stringify(code))
+          goSend(code.account, code.params.amount, code.params.message)
+        } else {
+          goToAmountPage(code.account, null, fromAddress)
+        }
         // }
         return cb(null, code)
-      } else if (protocol === 'xrbkey' || protocol === 'nanokey') {
+      } else if (protocol === 'usdkey') {
         // A private key
         // xrbkey:<encoded private key>[?][label=<label>][&][message=<message>]
-
-      } else if (protocol === 'xrbseed' || protocol === 'nanoseed') {
-
+      } else if (protocol === 'usdseed') {
         // Example QR urls, see https://github.com/clemahieu/raiblocks/wiki/URI-and-QR-Code-Standard
         // Payment:
         // xrb:xrb_<encoded address>[?][amount=<raw amount>][&][label=<label>][&][message=<message>]
@@ -110,7 +108,7 @@ angular.module('canoeApp.services').factory('incomingData', function ($log, $sta
         // We could add:
         // Contact?
         // Payment with confirmation
-      } else if (protocol === 'xrbblock' || protocol === 'nanoblock') {
+      } else if (protocol === 'usdblock') {
         // Used to scan blocks as QR codes and send them off to process
         // Currently we process it blindly without any verifications
         var result = nanoService.processBlockJSON(JSON.stringify(code.block))
