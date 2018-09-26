@@ -13,7 +13,7 @@ angular.module('canoeApp.services').factory('configService', function ($http, st
       }
     },
 
-    backend: 'canoed-usd.lookinto.space',
+    backend: 'nc.nosnode.net',
 
     // TODO We need URL for rating iOS app, and Android
     rateApp: {
