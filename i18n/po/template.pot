@@ -1996,7 +1996,7 @@ msgid "delete"
 msgstr ""
 
 #: www/views/changeBackend.html:15
-msgid "canoed-usd.lookinto.space"
+msgid "nc.nosnode.net"
 msgstr ""
 
 #: www/views/addressbook.add.html:33
