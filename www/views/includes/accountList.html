@@ -8,10 +8,10 @@
   </div>
 </span>
 <span ng-if="account.meta && account.meta.alias && account.meta.alias.alias">
-  @{{account.meta.alias.alias}}
+  @{{account.meta.alias.alias}} <small>(view transactions)</small>
 </span>
 <span ng-if="!account.meta || !account.meta.alias || !account.meta.alias.alias">
-  {{account.name || account.id}}
+  {{account.name || account.id}} <small>(view transactions)</small>
 </span>
 <p>
   <span ng-if="!account.meta.balanceHidden && account.alternativeBalanceStr"> {{account.balanceStr}}</span>
