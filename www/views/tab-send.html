@@ -97,7 +97,7 @@
         {{acc.name || acc.id}}
       </span>
       <p>
-        <span ng-if="!acc.meta.balanceHidden && acc.alternativeBalanceStr"> {{acc.balanceStr}} <span ng-hide="acc.alternativeBalanceStr == 'hide'">&asymp; {{acc.alternativeBalanceStr}}</span></span>
+        <span ng-if="!acc.meta.balanceHidden && acc.alternativeBalanceStr"> {{acc.balanceStr}}</span>
         <span ng-if="acc.meta.balanceHidden" translate>[Balance Hidden]</span>
         <span class="assertive" ng-if="acc.error">{{acc.error}}</span>
         &nbsp;
