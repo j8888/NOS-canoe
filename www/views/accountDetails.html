@@ -27,12 +27,6 @@
         ng-style="{'transform': amountScale}"
         ng-class="{amount__balance: amountIsCollapsible}">
         <strong class="size-36">{{account.balanceStr}}</strong>
-        <div
-          class="size-14 amount-alternative"
-          ng-if="account.alternativeBalanceStr"
-          ng-style="{opacity: altAmountOpacity}">
-          {{account.alternativeBalanceStr}}
-        </div>
       </div>
 
       <div ng-style="{'transform': amountScale}"
@@ -72,12 +66,6 @@
         ng-style="{'transform': amountScale}"
         ng-class="{amount__balance: amountIsCollapsible}">
         <strong class="size-36">{{account.balanceStr}}</strong>
-        <div
-          class="size-14 amount-alternative"
-          ng-if="account.alternativeBalanceStr"
-          ng-style="{opacity: altAmountOpacity}">
-          {{account.alternativeBalanceStr}}
-        </div>
       </div>
 
 <!--      <div ng-style="{'transform': amountScale}"
