@@ -935,7 +935,7 @@ msgid "Join the future of money,<br>get started with NOLLAR."
 msgstr ""
 
 #: www/views/onboarding/tour.html:22
-msgid "Just scan and pay."
+msgid "Never wait for transfers again!"
 msgstr ""
 
 #: www/views/preferencesLanguage.html:4
