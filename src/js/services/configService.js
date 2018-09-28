@@ -9,7 +9,7 @@ angular.module('canoeApp.services').factory('configService', function ($http, st
   var defaultConfig = {
     download: {
       canoe: {
-        url: 'https://nos.cash'
+        url: 'https://www.nollar.org'
       }
     },
 

@@ -20,7 +20,7 @@ angular.module('canoeApp.controllers').controller('tabHomeController',
 
     $scope.openExternalLinkHelp = function () {
     // TODO var url = 'https://getcanoe.io/' + uxLanguage.getCurrentLanguage() + '/help'
-      var url = 'https://nos.cash'
+      var url = 'https://www.nollar.org'
       var optIn = true
       var title = null
       var message = gettextCatalog.getString('Help and support information is available at the website.')
