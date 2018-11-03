@@ -3,7 +3,7 @@
 angular.module('canoeApp.services')
   .factory('nanoService', function ($log, $rootScope, $window, $state, $ionicHistory, $timeout, configService, popupService, soundService, platformInfo, storageService, gettextCatalog, aliasService, rateService, lodash) {
     var root = {}
-
+    var mantaHash = null;
     // This config is controlled over retained MQTT
     root.sharedconfig = {
       defaultRepresentative: null,
@@ -519,7 +519,9 @@ angular.module('canoeApp.services')
     root.parseQRCode = function (data, cb) {
       // <protocol>:<encoded address>[?][amount=<raw amount>][&][label=<label>][&][message=<message>]
       var code = {}
+
       var protocols = ['nos', 'nosseed', 'nosblock']
+
       try {
         var parts = data.match(/^([a-z]+):(.*)/) // Match protocol:whatever
         if (!parts) {
@@ -553,6 +555,20 @@ angular.module('canoeApp.services')
         if (code.protocol === 'nosblock') {
           code.block = JSON.parse(parts)
           cb(null, code)
+        } else if (code.protocol === 'manta') {
+          MantaWallet.init(data, function(response) {
+            if (response.error) {
+              cb("Invalid Manta QR Code")
+            } else {
+              code.account = response.account
+              code.params = {
+                amount: response.amount,
+                message: response.message,
+                manta: true
+              }
+              cb(null,code)
+            }
+          })
         } else {
           // URL style params, time to check for params
           parts = parts.split('?')
@@ -632,11 +648,14 @@ angular.module('canoeApp.services')
     }
 
     // Send amountRaw (bigInt) from account to addr, using wallet.
-    root.send = function (wallet, account, addr, amountRaw) {
+    root.send = function (wallet, account, addr, amountRaw, message, isManta) {
       $log.debug('Sending ' + amountRaw + ' from ' + account.name + ' to ' + addr)
       try {
-        var blk = wallet.addPendingSendBlock(account.id, addr, amountRaw)
+        var blk = wallet.addPendingSendBlock(account.id, addr, amountRaw, message)
         $log.debug('Added send block successfully: ' + blk.getHash(true))
+        if (isManta) {
+          mantaHash = blk.getHash(true)
+        }
       } catch (e) {
         $log.error('Send failed ' + e.message)
         return false
@@ -928,6 +947,9 @@ angular.module('canoeApp.services')
 
     root.confirmBlock = function (blk, hash, timestamp) {
       $log.debug('Confirming block: ' + hash + ' time: ' + timestamp)
+      if (mantaHash && hash == mantaHash) {
+        MantaWallet.publishPayment(hash)
+      }
       blk.setTimestamp(timestamp)
     }
 
